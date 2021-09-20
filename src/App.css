@@ -62,13 +62,15 @@ section#contact {
   }
 }
 
+
+
 .navbar{
-  padding-left: 0 !important;
-    padding-right: 0 !important;
-    color: white !important;
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    display: flex;
-    width: 100%;
-}
+    padding-left: 0 !important;
+      padding-right: 0 !important;
+      color: white !important;
+      position: fixed;
+      top: 0;
+      z-index: 1;
+      display: flex;
+      width: 100%;
+  }
