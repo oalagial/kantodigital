@@ -1,21 +1,15 @@
-$hexagon-width: 250px;
+$hexagon-width: 300px;
 $hexagon-height: $hexagon-width*.55;
-$hexagon-margin: 27px;
-$hexagon-title-color: #fff;
-$hexagon-border-color: #fff;
-$hexagon-border-color--hover: #fff;
+$hexagon-margin: 35px;
+$hexagon-title-color: rgb(2, 0, 46);
+$hexagon-border-color: rgb(2, 0, 46);
+$hexagon-border-color--hover: #1b1d1f;
 $hexagon-image-color: #1b1d1f;
-$honeycomb-max-width: 1200px;
+$honeycomb_max-width: 1200px;
 $viewport-thereshold: $hexagon-width + $hexagon-margin;
 
-@import "../../styles.scss";
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
-
-
-
-.otinane{
-  color:blue;
-}
+// @import "../../styles.scss";
+// @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
 :host {
     width: inherit;
@@ -24,7 +18,7 @@ $viewport-thereshold: $hexagon-width + $hexagon-margin;
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: #3ea0eb;
+  background: #ffffff;
 }
 
 
@@ -39,11 +33,11 @@ body {
   list-style: none;
   justify-content: center;
   align-items: center;
-  max-width: $honeycomb-max-width;
+  max-width: $honeycomb_max-width;
   margin: 0 auto;
   padding: 0;
+  padding-top: 10vh;
   transform: translateY(#{$hexagon-height/4});
-
 
 
   &_cell:hover {
@@ -73,11 +67,12 @@ body {
   z-index: 0;
   // Transition
 
-
+    &__details {
+      color:black;
+    }
 
     &__title {
-      color:red;
-
+      color:$hexagon-title-color;
       height: 100%;
       display: flex;
       flex-direction: column;
@@ -85,11 +80,10 @@ body {
       hyphens: auto;
       word-break: break-word;
       text-transform: uppercase;
-      color: #fff;
       font-weight: 700;
       font-size: 1.75em;
       transition: opacity 350ms;
-      
+
       > small {
         font-weight: 300;
         margin-top: 0.25em;
@@ -98,7 +92,7 @@ body {
 
     &__image {
       object-fit: cover;
-      object-position: left ;
+      object-position: left ;  
     }
     
     &::before, &::after {
@@ -123,7 +117,8 @@ body {
 
     &::after {
       background: $hexagon-image-color;
-      opacity: 0.7;
+      // opacity: 0;
+      background: rgba(255, 255, 255, 0.3);
       transition: opacity 350ms;
     }
 
@@ -131,7 +126,6 @@ body {
       
       .honeycomb_cell__title {
         opacity: 0;
-        color: red!important;
       }
       
       &::before {
@@ -196,4 +190,26 @@ body {
   .honeycomb__placeholder:nth-child(7n + 7), .honeycomb__placeholder:nth-child(7n + 9), .honeycomb__placeholder:nth-child(7n + 11){
     display:block;
   }
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .honeycomb {
+    padding-top: 0;
+  }
+}
+
+
+
+@media only screen and (max-width: 1100px) and (max-height: 700px) {
+  .honeycomb {
+    padding-top: 0;
+  }
+}
+
+.all_center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
