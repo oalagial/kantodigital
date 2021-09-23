@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/kantodigital/static/css/main.3b4bb24d.chunk.css",
+    "main.js": "/kantodigital/static/js/main.9ff07bd7.chunk.js",
+    "main.js.map": "/kantodigital/static/js/main.9ff07bd7.chunk.js.map",
+    "runtime-main.js": "/kantodigital/static/js/runtime-main.b846e11e.js",
+    "runtime-main.js.map": "/kantodigital/static/js/runtime-main.b846e11e.js.map",
+    "static/js/2.19324740.chunk.js": "/kantodigital/static/js/2.19324740.chunk.js",
+    "static/js/2.19324740.chunk.js.map": "/kantodigital/static/js/2.19324740.chunk.js.map",
+    "static/js/3.e5b3c229.chunk.js": "/kantodigital/static/js/3.e5b3c229.chunk.js",
+    "static/js/3.e5b3c229.chunk.js.map": "/kantodigital/static/js/3.e5b3c229.chunk.js.map",
+    "index.html": "/kantodigital/index.html",
+    "static/css/main.3b4bb24d.chunk.css.map": "/kantodigital/static/css/main.3b4bb24d.chunk.css.map",
+    "static/js/2.19324740.chunk.js.LICENSE.txt": "/kantodigital/static/js/2.19324740.chunk.js.LICENSE.txt",
+    "static/media/app1.8747bc68.png": "/kantodigital/static/media/app1.8747bc68.png",
+    "static/media/eshop2.7fb974c8.jpg": "/kantodigital/static/media/eshop2.7fb974c8.jpg",
+    "static/media/website1.2cbbc511.jpg": "/kantodigital/static/media/website1.2cbbc511.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b846e11e.js",
+    "static/js/2.19324740.chunk.js",
+    "static/css/main.3b4bb24d.chunk.css",
+    "static/js/main.9ff07bd7.chunk.js"
+  ]
+}
